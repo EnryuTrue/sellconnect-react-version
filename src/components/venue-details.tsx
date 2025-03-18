@@ -1,4 +1,4 @@
-import { MapPin, Star, Users, Car, Utensils, Music } from "lucide-react"
+import { MapPin, Star, Users, Car, Utensils, Music} from "lucide-react"
 
 interface VenueDetailsProps {
   name: string
@@ -57,6 +57,8 @@ export default function VenueDetails({ name, location, rating, description, capa
           </span>
         </div>
       </div>
+
+      
 
       <div className="prose max-w-none mb-8">
         <h2 className="text-xl font-semibold mb-4">About This Venue</h2>

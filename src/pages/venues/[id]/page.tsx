@@ -44,6 +44,11 @@ export default function VenuePage({ }: VenuePageProps) {
     setShowAllPhotos(true)
   }
 
+  const handleReserve = () => {
+    // In a real application, this would navigate to a checkout or booking form page
+    alert("Reservation request submitted for " + venueData.name)
+  }
+
   // Photo gallery modal
   if (showAllPhotos) {
     return (
@@ -102,8 +107,10 @@ export default function VenuePage({ }: VenuePageProps) {
               price={venueData.price}
               phone={venueData.contact.phone}
               email={venueData.contact.email}
+              onReserve={handleReserve}
             />
           </div>
+          
         </div>
       </section>
     </main>
